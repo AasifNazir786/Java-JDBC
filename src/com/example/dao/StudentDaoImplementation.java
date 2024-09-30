@@ -31,7 +31,40 @@ public class StudentDaoImplementation implements StudentDao
 
     @Override
     public Student getStudentById(int id) {
-        return null;
+        String query = "SELECT * FROM students WHERE id = ?";
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        Student student = null;
+        ResultSet rs = null;
+        try{
+            con = DBUtil.getConnection();
+            pstmt = con.prepareStatement(query);
+            pstmt.setInt(1, id);
+            rs = pstmt.executeQuery();
+            while(rs.next()){
+                student = new Student();
+                student.setId(rs.getInt(1));
+                student.setName(rs.getString(2));
+                student.setEmail(rs.getString(3));
+            }
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }finally {
+            try {
+                if (rs != null)
+                    rs.close();
+
+                if (pstmt != null)
+                    pstmt.close();
+
+                if (con != null)
+                    con.close();
+
+            } catch (SQLException e) {
+                System.out.println(e.getMessage()); // Print any exceptions while closing
+            }
+        }
+        return student;
     }
 
     @Override

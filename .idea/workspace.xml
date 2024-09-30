@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1017a982-e3a2-46df-b0e9-2b8612c9a1e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_7_41.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaJdbc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaJdbc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/dao/StudentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/dao/StudentDaoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/dao/StudentDaoImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/model/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
